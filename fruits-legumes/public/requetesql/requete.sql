@@ -21,20 +21,23 @@ CREATE TABLE client (
     ID_client INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     Nom_client VARCHAR (255),
     Prenom_client VARCHAR (255),
-    Mot_de_passe_client VARCHAR (255),
     Date_naissance DATE,
+    email VARCHAR (155),
+    Mot_de_passe_client VARCHAR (255),
     Num_telephone INT,
-    Adresse_client VARCHAR (255)
+    Adresse_client VARCHAR (255),
     Dep_client INT,
     Codepostal_client INT,
     Commune_client INT
 );
 
 CREATE TABLE compte (
-    ID INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    ID_compte INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     Num_compte DECIMAL (12,0),
-    mois_compte CHECK (BETWEEN 01 AND 12),
-    annee_compte CHECK (BETWEEN 2025 AND 2035),
+    mois INT,
+    CONSTRAINT mois_check CHECK (mois BETWEEN 1 AND 12),
+    annee INT,
+    CONSTRAINT annee_check CHECK (annee BETWEEN 2025 AND 2032),
     ID_client INT NOT NULL,
     FOREIGN KEY (ID_client) REFERENCES client (ID_client)
 );
