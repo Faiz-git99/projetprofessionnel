@@ -1,0 +1,19 @@
+
+.fel-navbar {
+    color:black;
+    text-align: right;
+    padding: 32px;
+    
+    display: flex;
+    
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.fel-logo{
+    height: 45px;
+    width: 45px;
+    
+}
