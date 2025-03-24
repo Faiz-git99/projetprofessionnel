@@ -1,5 +1,5 @@
 // Importation de la feuille de style CSS pour le composant Apropos
-import '../style/apropos.css'; 
+import '../styles/apropos.css'; 
 // Importation de l'image utilisée dans le composant (logo)
 import logo from '../assets/frlg.png';
 
