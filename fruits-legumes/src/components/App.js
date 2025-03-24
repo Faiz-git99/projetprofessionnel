@@ -1,14 +1,15 @@
-// src/App.js
-import Apropos from './apropos';
-import '../style/App.css';
 
-function App ()  {
+import logo from '../logo.svg';
+import '../styles/App.css'
+import Navbar from './navbar';
+
+function App() {
   return (
-    <div classeName="App">
-
-      <Apropos />
+    <div className="App">
+     
+      <Navbar/>
     </div>
   );
-};
+}
 
 export default App;
