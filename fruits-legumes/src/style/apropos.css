@@ -1,0 +1,73 @@
+
+.apropos {
+  display: flex; /* Utilise le modèle de mise en page Flexbox pour disposer les éléments dans un conteneur flexible */
+  align-items: center; /* Aligne les éléments enfants au centre verticalement */
+  justify-content: center; /* Centre les éléments enfants horizontalement */
+  text-align: left; /* Aligne le texte à gauche */
+  padding: 40px; /* Applique un espacement interne de 40px sur tout le conteneur */
+  background-color: #097235; /* Définir une couleur de fond vert foncé pour la section */
+  height: 100vh; /* Définit la hauteur de la section pour couvrir toute la hauteur de la fenêtre */
+  width: 100vw; /* Définit la largeur de la section pour couvrir toute la largeur de la fenêtre */
+  box-sizing: border-box; /* Inclut les bordures et les marges dans les dimensions de l'élément */
+  flex-wrap: wrap; /* Permet de répartir les éléments sur plusieurs lignes si nécessaire */
+}
+
+
+.apropos img {
+  width: 40%; /* L'image occupe 40% de la largeur de son conteneur */
+  height: auto; /* La hauteur est calculée automatiquement pour respecter les proportions de l'image */
+  max-height: 80vh; /* La hauteur maximale de l'image est limitée à 80% de la hauteur de la fenêtre */
+  margin-right: 30px; /* Ajoute un espacement de 30px à droite de l'image */
+  border-radius: 10px; /* Arrondit les coins de l'image avec un rayon de 10px */
+  object-fit: cover; /* Permet à l'image de couvrir l'espace disponible tout en préservant ses proportions */
+}
+
+.apropos .text-content {
+  width: 50%; /* La section texte occupe 50% de la largeur du conteneur */
+  padding: 20px; /* Ajoute un espacement interne de 20px à la section texte */
+  display: flex; /* Utilise également Flexbox pour organiser les éléments à l'intérieur de cette section */
+  flex-direction: column; /* Organise les éléments de la section dans une colonne verticale */
+  justify-content: center; /* Aligne les éléments enfants au centre verticalement */
+}
+
+
+.apropos h1 {
+  font-size: 48px; /* Définit la taille de police du titre à 48px */
+  color: #000000; /* Définit la couleur du texte du titre en noir */
+  margin-bottom: 20px; /* Ajoute un espacement de 20px sous le titre */
+  text-align: left; /* Aligne le texte du titre à gauche */
+}
+
+
+.apropos p {
+  font-size: 20px; /* Réduit la taille de la police des paragraphes à 20px pour une meilleure lisibilité */
+  color: #ffffff; /* Définit la couleur du texte en blanc */
+  line-height: 1.8; /* Augmente l'espacement entre les lignes du texte pour le rendre plus lisible */
+  margin: 0; /* Supprime les marges par défaut autour des paragraphes */
+}
+
+/* Règles spécifiques pour les écrans de taille maximale de 768px (pour les appareils mobiles ou tablettes) */
+@media (max-width: 768px) {
+  .apropos {
+      flex-direction: column; /* Change la direction du Flexbox en colonne pour une meilleure adaptation aux petits écrans */
+      padding: 20px; /* Réduit l'espacement interne à 20px */
+  }
+
+  .apropos img {
+      width: 80%; /* L'image occupe désormais 80% de la largeur de son conteneur */
+      margin-right: 0; /* Supprime l'espacement à droite de l'image */
+      margin-bottom: 20px; /* Ajoute un espacement de 20px en dessous de l'image */
+  }
+
+  .apropos .text-content {
+      width: 100%; /* La section texte occupe désormais toute la largeur du conteneur */
+  }
+
+  .apropos h1 {
+      font-size: 36px; /* Réduit la taille de la police du titre à 36px pour les petits écrans */
+  }
+
+  .apropos p {
+      font-size: 18px; /* Réduit la taille de la police des paragraphes à 18px */
+  }
+}
