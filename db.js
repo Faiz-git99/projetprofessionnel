@@ -1,3 +1,6 @@
+// Importe les fonctions 
+const express = require('express');
+
 const mysql2 = require('mysql2');
 
 // l'accès de connexion
