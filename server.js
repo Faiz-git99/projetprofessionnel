@@ -8,7 +8,16 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// l'accès de connexion
+app.get("/", (req, res) => {
+    res.send("Bienvenue sur mon API");
+})
+
+app.get("/api/message", (req, res) => {
+    res.json({message : "Hello depuis le backend !"});
+    
+})
+
+/* l'accès de connexion
 const connection = mysql2.createConnection({
     host : "localhost",
     user : "root",
@@ -16,8 +25,8 @@ const connection = mysql2.createConnection({
     port : 3306,
     database : "produits"
 });
-
-// verification de la base de données
+*/
+/*verification de la base de données
 connection.connect((error) => {
     if (error) {
         console.log("Erreur de connexion à la base de données", error);
@@ -25,3 +34,7 @@ connection.connect((error) => {
         console.log("Connecté à la base de données");
     }
 });
+*/
+app.listen(5000, () => console.log("serveur démarré sur htpp//localhost:5000"));
+
+//module.exports = connection
