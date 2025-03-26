@@ -3,9 +3,7 @@
     color:black;
     text-align: right;
     padding: 32px;
-    
-    display: flex;
-    
+    display:flex;
     flex-direction: row;
     align-items: center;
 }
@@ -15,5 +13,46 @@
 .fel-logo{
     height: 45px;
     width: 45px;
-    
+    float: left;
+    padding-left: 15px;
+
 }
+
+.navbar {
+    width: 100%;
+    overflow: auto;
+}
+
+.navbar a {
+    float:right;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    background-color: gray;
+}
+
+
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+}
+
+input[type="text"] {
+    margin-top: 10px; 
+    padding: 2px;
+    width: 30%; 
+
+}
+
+
+  
