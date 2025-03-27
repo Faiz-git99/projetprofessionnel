@@ -1,18 +1,49 @@
-.titre {
-text-align: center;
-text-transform: uppercase;
-}
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer le contenu verticalement */
+  }
+  
+  .commentfaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .commentfaire h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .prt1, .prt2, .prt3 {
+    display: inline-block; /* Permet aux éléments de se mettre en ligne */
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  .prt1 {
+    text-align: left; /* Aligner les textes de la première section à gauche */
+    margin-left: 0;
+  }
+  
+  .prt2 {
+    text-align: center; /* Centrer les textes de la deuxième section */
+  }
+  
+  .prt3 {
+    text-align: right; /* Aligner les textes de la troisième section à droite */
+    margin-right: 0;
+  }
+  
+  /* Ajoutez de l'espace entre les trois sections */
+  .commentfaire > div {
+    display: inline-block;
+    width: 30%; /* Chaque section occupe 30% de la largeur */
+  }
+  
 
-.prt1 {
-    text-align: left;
-    padding-left: 5px;
-}
 
-.prt2 {
-text-align: center;
-;
-}
 
-.prt3 {
-    text-align: right;
-}
+
