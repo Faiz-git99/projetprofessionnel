@@ -1,6 +1,7 @@
 import React, { useState } from 'react'; // Importation de React 
 import '../styles/creecompte.css'; // Importation du fichier CSS pour styliser le formulaire
 
+
 function Creecompte() {  // Déclaration du composant Creecompte
   // Déclaration des états pour chaque champ du formulaire
   const [nom, setNom] = useState(''); // État pour le nom
