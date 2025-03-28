@@ -3,6 +3,7 @@ import '../styles/apropos.css';
 // Importation de l'image utilisée dans le composant (logo)
 import logo from '../assets/frlg.png';
 
+
 // Définition du composant fonctionnel Apropos
 function Apropos() {
   return (
