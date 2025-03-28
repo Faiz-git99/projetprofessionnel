@@ -22,7 +22,7 @@ function Navbar (){
           <a href="#"> Se connecter</a>
           <a href="#"> Menu</a>
         </div>
-
+    
 
     )
 }
