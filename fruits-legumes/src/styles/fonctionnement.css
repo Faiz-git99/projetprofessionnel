@@ -1,16 +1,4 @@
-.fonctionnement {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centrer le contenu verticalement */
-  }
-  
-  .commentfaire {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  
+/* mise en forme de page fonctionnenement */
   .commentfaire h1 {
     text-transform: uppercase;
     text-align: center;
@@ -28,6 +16,10 @@
     margin-left: 0;
   }
   
+  /* Légère décalage du nombre 1 au centre */
+  .p1 {
+    margin-left: 100px;
+  }
   .prt2 {
     text-align: center; /* Centrer les textes de la deuxième section */
   }
@@ -37,6 +29,10 @@
     margin-right: 0;
   }
   
+.p3 {
+    margin-right: 70px;
+}
+
   /* Ajoutez de l'espace entre les trois sections */
   .commentfaire > div {
     display: inline-block;
